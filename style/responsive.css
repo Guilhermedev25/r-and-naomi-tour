@@ -1,0 +1,171 @@
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--secondary);
+        border-radius: 2rem 0 0 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    body.menu-active .carousel-button.next {
+        display: none;
+    }
+
+    nav a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 95vw;
+        margin: 1rem auto;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .box1 img {
+        border-radius: 1.5rem;
+    }
+
+    .box2 {
+        border-radius: 1.5rem;
+    }
+
+    .box2text h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .box2text p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .carousel-container {
+        width: 95vw;
+        height: 50vh;
+        margin: 1rem auto;
+    }
+
+    .slide-content {
+        max-width: 90%;
+    }
+
+    .slide-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .social-icons {
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 95vw;
+    }
+
+    .box2text h3 {
+        font-size: 3rem;
+    }
+
+    .carousel-container {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 0.5rem 2rem;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    .container {
+        height: 80vh;
+        margin: 1rem auto;
+    }
+
+    .carousel-container {
+        height: 80vh;
+    }
+
+    .box2text h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .box2text p {
+        margin-bottom: 1rem;
+    }
+
+    .box2text .about-text {
+        margin-bottom: 6rem !important;
+    }
+
+    .box2text .social-icons {
+        margin-bottom: 6rem !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .carousel-container {
+        max-width: 1200px;
+    }
+}
