@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
     header {
         padding: 1rem;
+        background: transparent;
     }
 
     .logo {
@@ -81,11 +82,20 @@
     }
 
     .slide-content {
-        max-width: 90%;
+        max-width: 85%;
+        padding: 1rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
     }
 
     .slide-content h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
     }
 
     .carousel-button {
@@ -122,6 +132,7 @@
 @media screen and (max-height: 500px) and (orientation: landscape) {
     header {
         padding: 0.5rem 2rem;
+        background: transparent;
     }
 
     .logo {
@@ -141,7 +152,23 @@
     .carousel-container {
         height: 80vh;
     }
+    .slide-content {
+        max-width: 70%;
+        padding: 0.8rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
 
+    .slide-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+        line-height: 1.2;
+    }
     .box2text h3 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
